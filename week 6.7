@@ -1,0 +1,18 @@
+arr = []
+
+n = int(input())
+
+for i in range(n):
+    element = int(input())
+    arr.append(element)
+
+frequency = {}
+for element in arr:
+    if element in frequency:
+        frequency[element] += 1
+    else:
+        frequency[element] = 1
+
+
+for element, count in frequency.items():
+    print(f"{element} occurs {count} times")
