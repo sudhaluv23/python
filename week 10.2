@@ -1,0 +1,14 @@
+def find_and_print_peak_elements(n, arr):
+    if n == 1:
+        print(arr[0])
+    else:
+        if arr[0] >= arr[1]:
+            print(arr[0], end=" ")
+        for i in range(1, n - 1):
+            if arr[i - 1] <= arr[i] >= arr[i + 1]:
+                print(arr[i], end=" ")
+        if arr[n - 1] >= arr[n - 2]:
+            print(arr[n - 1], end=" ")
+n = int(input())
+arr = list(map(int, input().split()))
+find_and_print_peak_elements(n, arr)
