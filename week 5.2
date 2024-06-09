@@ -1,0 +1,10 @@
+sen=input()
+word=sen.split()
+longestword=""
+maxlen=0
+for word in word:
+    if len(word)>maxlen:
+        longestword=word
+        maxlen=len(word)
+print(longestword)
+print(maxlen)
