@@ -1,0 +1,15 @@
+str=input()
+lettercount=0
+digitcount=0
+digitcount=0
+specialcount=0
+for char in str:
+    if char.isalpha():
+        lettercount+=1
+    elif char.isdigit():
+        digitcount+=1
+    else:
+        specialcount+=1
+print(lettercount)
+print(digitcount)
+print(specialcount)
